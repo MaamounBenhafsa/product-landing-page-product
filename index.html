@@ -1,0 +1,201 @@
+<!--
+ =========================================================
+ * Material Kit - v2.0.6
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Brosse à dent automatique sans main&ndash; boostdz</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Material Kit CSS -->
+  <link href="css/material-kit.css?v=2.0.6" rel="stylesheet" />
+  <style type="text/css">
+
+
+
+
+
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#">
+  <div class="logo-image">
+    <img src="img/logo.png" class="img-fluid" alt="logo brand">
+  </div>
+</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+<div class="page-header header-filter" data-parallax="true" style="background-color: #7FDBFF;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand text-center">
+            <h1> Brosse à dent automatique </h1>
+            <h3 class="title text-center">sans main</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<!-- Flickity HTML init -->
+<div class="carousel js-flickity">
+  <!-- images from unsplash.com -->
+  <div class="carousel-cell">
+    <img src="img/1.jpg" alt="orange tree" />
+  </div>
+  <div class="carousel-cell">
+    <img src="img/2.jpg" alt="submerged" />
+  </div>
+  <div class="carousel-cell">
+    <img src="img/3.jpg" alt="look-out" />
+  </div>
+  <div class="carousel-cell">
+    <img src="img/4.jpg" alt="One World Trade" />
+  </div>
+</div>
+    </div>
+    <div class="row">
+  </div>
+</div>
+<br>
+<br>
+<br>
+  <p class="h5">Les dentistes recommandent généralement deux minutes entières (une éternité si vous passez réellement les deux minutes complètes) à vous brosser la bouche. Lorsque ce temps est extrapolé à la quantité de temps que chaque surface de dent est brossée (en supposant que 28 dents adultes sont en éruption, avec trois surfaces exposées de la plupart de ces dents), chaque surface est brossée pendant environ 1,4 seconde! Cela ne semble pas beaucoup de temps! Cependant, avec OtoBrush, chaque surface de dent sera brossée pendant 10 secondes et il ne vous faudra que 15 secondes pour vous brosser la bouche en entier, sans les mains!</p>
+    </div>
+    <div class="text-center">
+      <img src="img/1.jpg">
+  <button class="btn btn-primary btn-round">
+  <i class="material-icons">add_shopping_cart</i> Add To Cart <p>300$</p>
+
+</button>
+
+</div>
+  </div>
+  <footer class="footer footer-default">
+    <div class="container">
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, made with <i class="material-icons">favorite</i> 
+        <a href="#" target="blank">Shop Landing Page Product Mamoun Benhafsa</a> 
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
